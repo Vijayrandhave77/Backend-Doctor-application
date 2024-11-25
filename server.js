@@ -9,9 +9,7 @@ const appoinSchema = require('./Models/AppoinSchema')
 const PORT = process.env.PORT || 4000
 
 const cors = require('cors')
-app.use(cors({
-    origin:"https://frontend-doctor-application.vercel.app/"
-}))
+app.use(cors())
 
 app.get("/",(req,res)=>{
     res.send("Hello World")
